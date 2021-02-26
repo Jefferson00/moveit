@@ -11,6 +11,8 @@ import Head from 'next/head'
 import styles from "../styles/pages/Home.module.css"
 import { CountdownProvider } from "../contexts/CountdownContext";
 import { ChallangesProvider } from "../contexts/ChallengesContext";
+import useDarkMode from "use-dark-mode";
+import Switch from "react-switch"
 
 interface HomeProps{
     level: number;
@@ -18,7 +20,11 @@ interface HomeProps{
     challengesCompleted: number;
 }
 
-export default function Home(props) {
+export default function Home(props: HomeProps) {
+
+  const darkmode = useDarkMode(false)
+
+
   return (
     <ChallangesProvider 
       level={props.level}
@@ -31,6 +37,13 @@ export default function Home(props) {
         </Head>
         
         <ExperienceBar/>
+        <Switch 
+          checked={darkmode.value} 
+          onChange={darkmode.toggle} 
+          uncheckedIcon={false} 
+          checkedIcon={false}
+          onHandleColor={'#4CD62B'}
+        />
 
         <CountdownProvider>
           <section>

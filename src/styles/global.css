@@ -16,7 +16,9 @@
     --blue:#5965E0;
     --blue-dark:#4953B8;
     --blue-twitter:#2AA9E0;
+    --background-dark:#1d1d1d;
 }
+
 
 @media(max-width: 1080px){
     html{
@@ -48,10 +50,16 @@
     }
 }
 
-body{
+body.dark-mode{
+    background: var(--background-dark);
+    color:var(--white);
+}
+
+body.light-mode{
     background: var(--background);
     color:var(--text);
 }
+
 
 body, input, textarea, button{
     font: 400 1rem "Inter", sans-serif;
