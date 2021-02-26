@@ -30,6 +30,24 @@
     }
 }
 
+@media(max-width: 520px){
+    html{
+        font-size: 58.5%;
+    }
+}
+
+@media(max-height: 630px){
+    html{
+        font-size: 85.5%;
+    }
+}
+
+@media(max-height: 530px){
+    html{
+        font-size: 77.5%;
+    }
+}
+
 body{
     background: var(--background);
     color:var(--text);
