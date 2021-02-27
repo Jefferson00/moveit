@@ -1,0 +1,109 @@
+.container{
+    background: #5965E0;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container section > img{
+    max-height: 600px;
+}
+
+.container section:last-child > img{
+    margin-bottom: 6rem;
+}
+
+.container section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container section strong{
+    font-weight: 600;
+    font-size: 2.25rem;
+    color: var(--white);
+}
+
+.container section div{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container section:last-child >div{
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.container section > div > img{
+    margin-right: 1.5rem;
+}
+
+.container section p{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #B2B9FF;
+}
+
+.container section input{
+    height: 5rem;
+    background: linear-gradient(90deg, #4953B8 0%, rgba(73, 83, 184, 0.2) 100%);
+    border: none;
+    border-radius: 5px 0  0 5px;
+    padding: 1.4rem 1.8rem;
+    font-size: 1.25rem;
+    color: var(--white);
+}
+
+.container section input::placeholder{
+    color: #B2B9FF ;
+    font-size: 1.25rem;
+}
+
+.container section input:focus{
+    outline: none;
+}
+
+
+.container section input:focus::placeholder{
+    color: var(--white) ;
+}
+
+
+.container section button{
+    background: #4953B8;
+    border: none;
+    height: 5rem;
+    color: white;
+    padding: 1.75rem;
+    border-radius: 0 5px 5px 0;
+    transition: background 0.4s;
+}
+
+.container section button:hover{
+    filter: brightness(0.9);
+}
+
+.container section input:focus-within ~ button{
+    background: var(--green);
+}
+
+@media(max-width: 1024px){
+    .container{
+        grid-template-columns: none;
+        align-content: center;
+        gap: 2.5rem;
+    }
+    .container section:first-child > img{
+        height: 250px;
+    }
+    .container section{
+        align-items: center;
+    }
+    .container section:last-child > img{
+        max-height: 58px;
+    }
+}
