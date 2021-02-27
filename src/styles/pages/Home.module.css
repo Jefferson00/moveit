@@ -1,3 +1,6 @@
+.mainContainer{
+    display: flex;
+}
 
 .container{
     height: 100vh;

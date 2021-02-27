@@ -17,6 +17,13 @@
     --blue-dark:#4953B8;
     --blue-twitter:#2AA9E0;
     --background-dark:#1d1d1d;
+    --background-lateral:#ffffff;
+    --background-countdown:#ffffff;
+    --background-challenges-box:#ffffff;
+    --boxshadow: rgba(0,0, 0, 0.05);
+    --contdown-button: #ffffff;
+    --background-modal: rgba(242,243,245,0.8);
+    --background-container-modal:#ffffff;
 }
 
 
@@ -48,6 +55,10 @@
     html{
         font-size: 77.5%;
     }
+}
+
+body{
+    transition: all 0.2s;
 }
 
 body.dark-mode{

@@ -1,9 +1,11 @@
 import { useContext } from "react"
 import { ChallengesContext } from "../contexts/ChallengesContext"
+import { ThemeContext } from "../contexts/ThemeContext"
 import styles from "../styles/components/Profile.module.css"
 
 export function Profile(){
     const {level} = useContext(ChallengesContext)
+    const {darkmode} = useContext(ThemeContext)
 
     return(
         <div className={styles.profileContainer}>

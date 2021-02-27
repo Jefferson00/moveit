@@ -1,8 +1,8 @@
 .challengeBoxContainer{
     height: 100%;
-    background: var(--white);
+    background: var(--background-challenges-box);
     border-radius: 5px;
-    box-shadow: 0 0 60px rgba(0,0,0,0.05);
+    box-shadow: 0 0 5px var(--boxshadow);
     padding: 1.5rem 2rem;
     display: flex;
     flex-direction: column;
@@ -10,7 +10,6 @@
     justify-content: center;
     text-align: center;
 }
-
 
 .challengeNotActive{
     display: flex;
@@ -44,7 +43,7 @@
 }
 
 .challengeActive header{
-    color: var(--blue);
+    color: var(--title);
     font-weight: 600;
     font-size: 1.25rem;
     padding: 0 2rem 1.5rem;
