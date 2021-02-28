@@ -23,10 +23,9 @@
 
 ## 💻 Projeto
 
-# Demo
 
 <a href="https://moveit-chi-two.vercel.app">
-    <img alt="Made by Jefferson" src="https://img.shields.io/badge/made%20by-Jefferson-blue">
+   Demo
 </a>
 
 
