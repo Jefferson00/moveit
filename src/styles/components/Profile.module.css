@@ -12,6 +12,7 @@
 
 .profileContainer div{
     margin-left: 1.5rem;
+    flex: 1;
 }
 
 .profileContainer div strong{
@@ -27,6 +28,24 @@
 
 .profileContainer div p img{
     margin-right: 0.5rem;
+}
+
+.profileContainer button{
+    height: 2rem;
+    padding: 0.5rem;
+    background: var(--blue);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    font-size: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+}
+
+.profileContainer button:hover{
+    background: var(--blue-dark);
 }
 
 @media(max-width: 720px){

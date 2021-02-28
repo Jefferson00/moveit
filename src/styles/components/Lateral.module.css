@@ -11,3 +11,12 @@
     background: transparent;
     border: none;
 }
+
+@media(max-width: 720px){
+    .lateralContainer{
+        max-width: none;
+        flex-direction: row;
+        padding: 1.25rem;
+        align-items: center;
+    }
+}

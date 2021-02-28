@@ -25,4 +25,7 @@
         margin-top: 3.25rem;
         grid-template-columns: none;
     }
+    .mainContainer{
+       flex-direction: column;
+    }
 }

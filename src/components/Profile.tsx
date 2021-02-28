@@ -1,24 +1,27 @@
 import { useContext } from "react"
 import { ChallengesContext } from "../contexts/ChallengesContext"
-import { ThemeContext } from "../contexts/ThemeContext"
+import { LoginContext } from "../contexts/LoginContext"
 import styles from "../styles/components/Profile.module.css"
 
 export function Profile(){
     const {level} = useContext(ChallengesContext)
-    const {darkmode} = useContext(ThemeContext)
+    const {userImage, userName, handleLogout} = useContext(LoginContext)
 
     return(
         <div className={styles.profileContainer}>
-            <img src="https://github.com/jefferson00.png" alt="profile"/>
+            <img src={userImage} alt="profile"/>
             <div>
                 <strong>
-                    Jefferson Silva
+                    {userName}
                 </strong>
                 <p>
                     <img src="icons/level.svg" alt="level"/>
                     Level {level}
                 </p>
             </div>
+            <button onClick={handleLogout}>
+                <img src="icons/logout.svg" alt="sair"/>
+            </button>
         </div>
     )
 }

@@ -1,30 +1,70 @@
-import styles from "../styles/pages/Login.module.css"
 
-export default function Home() {
+import {GetServerSideProps} from 'next'
 
+import Head from 'next/head'
+
+import { ChallangesProvider } from "../contexts/ChallengesContext";
+import { ThemeProvider } from "../contexts/ThemeContext";
+import { LoginProvider } from "../contexts/LoginContext";
+import { MainPage } from "../components/MainPage";
+
+interface HomeProps{
+    level: number;
+    currentExperience: number;
+    challengesCompleted: number;
+    theme:boolean;
+    userName: string;
+    userImage: string;
+    isUserLogged: boolean;
+}
+
+export default function Home(props: HomeProps) {
   return (
-    <div className={styles.container}>
-        <section>
-            <img src="Simbolo.svg" alt="simbolo"/>
-        </section>
-        <section>
-            <img src="Logo-full-white.svg" alt="Logo"/>
-            <strong>
-                Bem-vindo
-            </strong>
-            <div>
-                <img src="icons/github.svg" alt="Github"/>
-                <p>Faça login com seu github para começar</p>
-            </div>
-
-            <div>
-                <input placeholder="Digite seu username"/>
-                <button type="button" id="login-button">
-                  <img src="icons/arrow.svg" alt="login"/>
-                </button>
-            </div>
-        </section>
-    </div>
+    <LoginProvider
+      userName={props.userName}
+      userImage={props.userImage}
+      isUserLogged={props.isUserLogged}
+    >
+    <ThemeProvider
+      theme={props.theme}
+    >
+    <ChallangesProvider 
+      level={props.level}
+      currentExperience ={props.currentExperience}
+      challengesCompleted = {props.challengesCompleted}
+    >
+    <Head>
+        <title>Inicio | Moveit</title>
+    </Head>
+    <MainPage/>
+      
+    </ChallangesProvider>
+    </ThemeProvider>
+    </LoginProvider>
   )
+}
+
+export const getServerSideProps : GetServerSideProps = async (ctx) =>{
+   
+    const {level, 
+        currentExperience, 
+        challengesCompleted, 
+        theme,
+        userName,
+        userImage,
+        isUserLogged,
+    } = ctx.req.cookies;
+
+    return{
+        props: {
+          level: Number(level), 
+          currentExperience: Number(currentExperience),
+          challengesCompleted: Number(challengesCompleted),
+          theme: theme == 'true',
+          userName: String(userName),
+          userImage: String(userImage),
+          isUserLogged: isUserLogged == 'true',
+        }
+    }
 }
 
