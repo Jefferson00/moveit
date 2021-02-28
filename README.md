@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <img src="/github/presentation.png">
+  <img src="public/github/presentation.png">
 </p>
 
 ## 💻 Projeto
