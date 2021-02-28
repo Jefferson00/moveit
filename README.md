@@ -1,7 +1,7 @@
-# Move.it
+<p align="center"> # Move it </p>
 
 <h2 align="center"> 
-  Aplicativo desenvolvido durante Next Level week 04
+  Aplicativo desenvolvido durante a Next Level week 04
 </h2>
 
 <p align="center">
@@ -13,8 +13,6 @@
   <a href="https://www.linkedin.com/in/jefferson-c-silva-aa1b7b1a9/">
     <img alt="Made by Jefferson" src="https://img.shields.io/badge/made%20by-Jefferson-blue">
   </a>
-  
-  
 </p>
 
 <p align="center">
@@ -38,9 +36,6 @@ Move it é um projeto que tem como ideia principal combinar a técnica <a href="
 - NextJS
 - CSS
 
-## 🔖 Layout
-
-...
 
 ## ℹ️ How To Use
 
