@@ -23,6 +23,7 @@
 
 ## 💻 Projeto
 
+Move it é um projeto que tem como ideia principal combinar a técnica <a href="https://pt.wikipedia.org/wiki/T%C3%A9cnica_pomodoro">pomodoro</a> com gamificação criando uma aplicação onde o usuário ganha experiência e sobe de nível ao realizar os exercícios propostos.
 
 <a href="https://moveit-chi-two.vercel.app">
    🔥 Demo
@@ -33,7 +34,8 @@
 ## 🚀 Tecnologias
 
 - TypeScript
-- Next JS
+- ReactJS
+- NextJS
 - CSS
 
 ## 🔖 Layout
