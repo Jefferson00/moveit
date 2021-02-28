@@ -12,7 +12,7 @@ export function Lateral(){
         <div className={
             styles.lateralContainer}>
             <div>
-                <img src="logo.svg" alt="Move it"/>
+                <img src="Logo.svg" alt="Move it"/>
             </div>
    
             <div>
