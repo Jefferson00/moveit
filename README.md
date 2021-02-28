@@ -58,6 +58,11 @@ $ yarn dev
 
 ## 📝 License
 
+<a href="/LICENCE">
+    <img alt="Made by Jefferson" src="https://img.shields.io/badge/licence-MIT-blue">
+  </a>
+
+
 Made with ♥ by Jefferson C Silva :wave: [Get in touch!](https://www.linkedin.com/in/jefferson-c-silva)
 
 
