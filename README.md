@@ -6,10 +6,15 @@
 
 <p align="center">
   <img alt="Version" src="https://img.shields.io/badge/version-1.0-brightgreen">
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/Jefferson00/Moveit">
+  <a href="https://www.linkedin.com/in/jefferson-c-silva-aa1b7b1a9/">
+    <img alt="Made by Jefferson" src="https://img.shields.io/badge/vercel-demo-brightgreen">
+  </a>
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/Jefferson00/moveit">
   <a href="https://www.linkedin.com/in/jefferson-c-silva-aa1b7b1a9/">
     <img alt="Made by Jefferson" src="https://img.shields.io/badge/made%20by-Jefferson-blue">
   </a>
+  
+  
 </p>
 
 <p align="center">
@@ -18,9 +23,12 @@
 
 ## 💻 Projeto
 
-#Demo
+# Demo
 
-moveit-chi-two.vercel.app
+<a href="https://moveit-chi-two.vercel.app">
+    <img alt="Made by Jefferson" src="https://img.shields.io/badge/made%20by-Jefferson-blue">
+</a>
+
 
 
 ## 🚀 Tecnologias
