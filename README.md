@@ -58,7 +58,7 @@ $ yarn dev
 
 ## 📝 License
 
-<a href="/LICENCE">
+<a href="/LICENSE">
     <img alt="Made by Jefferson" src="https://img.shields.io/badge/licence-MIT-blue">
   </a>
 
