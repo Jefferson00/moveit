@@ -6,7 +6,7 @@
 
 <p align="center">
   <img alt="Version" src="https://img.shields.io/badge/version-1.0-brightgreen">
-  <a href="https://www.linkedin.com/in/jefferson-c-silva-aa1b7b1a9/">
+  <a href="https://moveit-chi-two.vercel.app/">
     <img alt="Made by Jefferson" src="https://img.shields.io/badge/vercel-demo-brightgreen">
   </a>
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/Jefferson00/moveit">
