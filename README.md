@@ -1,4 +1,4 @@
-# <p align="center">Move it </p>
+# <p align="center"> <img src="public/logo-full.svg"> </p>
 
 <h2 align="center"> 
   Aplicativo desenvolvido durante a Next Level week 04
